@@ -1,0 +1,955 @@
+/* ------------------------------ GENERAL -------------------------------- */
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    overflow-x: hidden;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#bodycontainer {
+    height: 3320px;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+
+#backgroundimage {
+    position: fixed;
+    width: 100%;
+    margin-top: -75px;
+    z-index: -1;
+}
+
+/* ------------------------------  -------------------------------- */
+
+#headerdiv {
+    position: absolute;
+    height: 1661px;
+    width: 100%;
+    background: rgb(255, 204, 51);
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    z-index: 1;
+}
+
+#headerheading {
+    position: absolute;
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: 5px;
+    text-align: center;
+    padding: 0px;
+    margin-top: 40px;
+    margin-left: 40px;
+    transform: uppercase;
+    background: url(IMAGES/dribble.gif);
+    background-size: 1500px 700px;
+    background-position: 40px -130px;
+    background-attachment: fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-delay: 1s;
+    z-index: 5;
+}
+
+#codegiffydiv {
+    position: absolute;
+    height: 1280px;
+    width: 70%;
+    margin-top: 540px;
+    background-size: 1400px 1020px;
+    background-position: -240px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(255, 204, 51, 1), rgba(255, 204, 51, 0.3)), url("IMAGES/codevid.gif");
+    z-index: 1;
+}
+
+.namelogodiv {
+    position: absolute;
+    height: 100px;
+    width: 1000px;
+    margin-top: 160px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+    -webkit-clip-path: polygon(0 0, 100% 0, 89.9% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 89.9% 100%, 0% 100%);
+    z-index: 1;
+    display: none;
+}
+
+.namelogo {
+    position: absolute;
+    height: 600px;
+    margin-top: -255px;
+    margin-left: 100px;
+    z-index: 2;
+}
+
+#headerimage {
+    position: fixed;
+    width: 100%;
+    margin-top: -300px;
+    z-index: 0;
+}
+
+#mymainpic {
+    position: absolute;
+    height: 200px;
+    margin-top: 450px;
+    margin-left: 100px;
+    border-radius: 100%;
+    z-index: 2;
+    border: 4px white double;
+    -webkit-animation-duration: 4.7s;
+    -webkit-animation-delay: 2s;
+}
+
+#mymainpic:hover {
+    border: 4px red double;
+    transform: scale(1.05);
+}
+
+.menubuttons {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid white;
+    color: white;
+    -webkit-animation-duration: 3s;
+}
+
+.menubuttons:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: red;
+    border: 1px solid red;
+    height: 34px;
+}
+
+#aboutmebutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 84.3%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1.4s;
+}
+
+#myworkbutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 8%;
+    margin-left: 80.8%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1.2s;
+}
+
+#myresumebutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 11%;
+    margin-left: 77.4%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 1s;
+}
+
+#mylinkedinbutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 14%;
+    margin-left: 73.9%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.8s;
+}
+
+#myfacebookbutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 17%;
+    margin-left: 70.4%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.6s;
+}
+
+#myinstagrambutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 20%;
+    margin-left: 66.9%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.4s;
+}
+
+#othertalentsbutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 23%;
+    margin-left: 63.4%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-delay: 0.2s;
+}
+
+#contactmebutton {
+    position: absolute;
+    height: 30px;
+    width: 300px;
+    margin-top: 26%;
+    margin-left: 60%;
+    float: right;
+    font-size: 15px;
+    text-align: left;
+    padding-left: 15px;
+    z-index: 1;
+    -webkit-animation-duration: 2s;
+}
+
+#linediv1 {
+    position: absolute;
+    height: 3px;
+    width: 1030px;
+    margin-top: 582px;
+    margin-left: 20px;
+    border: 2px white solid;
+    border-radius: 100%;
+    -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    box-shadow: 10px 10px 8px 10px black;
+    z-index: 2;
+}
+
+#mytitleheader {
+    position: absolute;
+    margin-top: 410px;
+    margin-left: 330px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 3px;
+    z-index: 2;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-delay: 4s;
+}
+
+#mytitleheader:hover {
+    color: red;
+}
+
+#languageslist1 {
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 340px;
+    color: white;
+    z-index: 1;
+    -webkit-animation-duration: 4.7s;
+    -webkit-animation-delay: 2s;
+}
+
+#languageslist2 {
+    position: absolute;
+    margin-top: 560px;
+    margin-left: 340px;
+    color: white;
+    z-index: 1;
+    -webkit-animation-duration: 4.7s;
+    -webkit-animation-delay: 2s;
+}
+
+#languageslist3 {
+    position: absolute;
+    margin-top: 465px;
+    margin-left: 540px;
+    color: white;
+    z-index: 1;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-delay: 2s;
+}
+
+.languagebullets {
+    margin-left: 30px;
+}
+
+.languagebullets:hover {
+    color: red;
+}
+
+#wannahearpar {
+    position: absolute;
+    margin-top: 784px;
+    margin-left: 500px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+}
+
+#wannahearpar:hover {
+    color: red;
+}
+
+
+.player {
+    position: relative;
+    height: 230px;
+    width: 230px;
+    margin-top: 790px;
+    margin-left: 120px;
+    border-radius: 100%;
+    z-index: 1;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+}
+
+.spinner-outer {
+    position: absolute;
+    height: 420px;
+    width: 420px;
+    margin-top: -98px;
+    margin-left: -97px;
+    border-radius: 100%;
+    background: url(IMAGES/record.png);
+    background-position: 97px 97px;
+    background-size: 230px 230px;
+    background-repeat: no-repeat;
+}
+
+.playing .spinner-outer {
+    animation: spinclockwise 15s linear infinite;
+}
+
+.spinner-center {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    margin-top: -85px;
+    margin-left: -85px;
+    border-radius: 100%;
+    background: url(IMAGES/lightcircle.png);
+    background-position: 79px 76px;
+    background-size: 240px 240px;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.playing .spinner-center {
+    animation: spincounterclockwise 15s linear infinite;
+    display: block;
+}
+
+@keyframes spincounterclockwise {
+    from {
+        transform: rotate(360deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.pulse .spinner-outer {
+    animation: pulse 0.5s linear 1;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1.3);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.play-sprite {
+    position: absolute;
+    height: 75px;
+    width: 75px;
+    margin-top: 77.5px;
+    margin-left: 77px;
+    border-radius: 100%;
+    background: url(IMAGES/playpauseicon.png);
+    background-position: 5px -20px;
+    background-size: 145px 117px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.playing .play-sprite {
+    background-position: -70px -20px;
+}
+
+/* ------------------------------  -------------------------------- */
+
+#transitionaldiv {
+    position: absolute;
+    height: 3320px;
+    width: 100%;
+    float: right;
+    background: rgb(255, 204, 51);
+    -webkit-clip-path: polygon(20% 50%, 100% 10%, 100% 30%, 60% 50%, 100% 70%, 100% 90%);
+    clip-path: polygon(20% 50%, 100% 10%, 100% 30%, 60% 50%, 100% 70%, 100% 90%);
+    z-index: 1;
+}
+
+#mefadedpic {
+    width: 40%;
+    position: fixed;
+    margin-top: 220px;
+    margin-left: 17%;
+}
+
+#imagesliderdiv {
+    position: absolute;
+    height: 450px;
+    width: 50%;
+    margin-top: 680px;
+    margin-left: 50%;
+    float: right;
+    overflow: hidden;
+    z-index: 1;
+}
+
+#imagesliderfilterdiv {
+    position: absolute;
+    height: 450px;
+    width: 50%;
+    margin-top: 680px;
+    margin-left: 50%;
+    float: right;
+    background: linear-gradient(to bottom, rgba(255, 204, 51, 1), rgba(255, 204, 51, 0.4), rgba(255, 204, 51, 0.2), rgba(255, 204, 51, 0.4), rgba(255, 204, 51, 1));
+    overflow: hidden;
+    z-index: 1;
+}
+
+section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.stars {
+    position: absolute;
+    margin-top: 1170px;
+    margin-left: 190px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url(IMAGES/pattern.png);
+}
+
+.stars:nth-child(1) {
+    animation: animate 40s linear infinite;
+}
+
+.stars:nth-child(2) {
+    animation: animate 42s linear infinite;
+}
+
+.stars:nth-child(3) {
+    animation: animate 44s linear infinite;
+}
+
+.stars:nth-child(4) {
+    animation: animate 46s linear infinite;
+}
+
+.stars:nth-child(5) {
+    animation: animate 48s linear infinite;
+}
+
+.stars:nth-child(6) {
+    animation: animate 50s linear infinite;
+}
+
+.stars:nth-child(7) {
+    animation: animate 52s linear infinite;
+}
+
+.stars:nth-child(8) {
+    animation: animate 54s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#myphilosophyfilterdiv {
+    position: absolute;
+    height: 1100px;
+    width: 420px;
+    margin-top: 1660px;
+    margin-left: 60%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+#myphilosophydiv {
+    position: absolute;
+    height: 474px;
+    width: 20%;
+    margin-top: 1940px;
+    margin-left: 60.8%;
+    overflow: hidden;
+    overflow-y: scroll;
+    -webkit-clip-path: polygon(70% 0, 100% 21%, 100% 100%, 30% 100%, 0% 79%, 0 0);
+    clip-path: polygon(70% 0, 100% 21%, 100% 100%, 30% 100%, 0% 79%, 0 0);
+    z-index: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+#myphilosophyheading {
+    color: white;
+}
+
+#myphilosophyheading:hover {
+    color: rgba(255, 204, 51, 1);
+}
+
+.myphilosophypars {
+    color: white;
+}
+
+.myphilosophypars:hover {
+    color: rgba(255, 204, 51, 1);
+}
+
+#myphilosophypar4 {
+    padding-left: 120px;
+}
+
+#myotherpic {
+    position: absolute;
+    height: 800px;
+    width: 28%;
+    margin-top: 2000px;
+    margin-left: 80%;
+    float: right;
+    z-index: 0;
+}
+
+/* ------------------------------  -------------------------------- */
+
+#aboutmetextdiv {
+    position: relative;
+    height: 620px;
+    width: 30%;
+    margin-top: 1348px;
+    margin-left: 70%;
+    overflow: hidden;
+    overflow-y: scroll;
+    z-index: 1;
+    -webkit-clip-path: polygon(36% 0, 100% 0, 100% 100%, 36% 100%, 0 72%, 0 27%);
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 36% 100%, 0 72%, 0 27%);
+}
+
+#aboutmeheading {
+    position: relative;
+    margin-left: 200px;
+    color: white;
+}
+
+#aboutmeheading:hover {
+    color: rgb(255, 204, 51);
+}
+
+.aboutmeparagraphs {
+    padding-left: 45px;
+    padding-right: 20px;
+    color: white;
+}
+
+.aboutmeparagraphs:hover {
+    color: rgb(255, 204, 51);
+}
+
+#aboutmepar1 {
+    padding-left: 105px;
+}
+
+#aboutmepar10 {
+    padding-left: 170px;
+}
+
+#blurdiv {
+    position: absolute;
+    height: 1370px;
+    width: 100%;
+    margin-top: -1000px;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(100% 0, 50% 50%, 100% 100%);
+    clip-path: polygon(100% 0, 50% 50%, 100% 100%);
+    z-index: 0;
+}
+
+/* ------------------------------  -------------------------------- */
+
+#myworkdiv {
+    position: absolute;
+    height: 740px;
+    width: 1000px;
+    margin-top: 600px;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+#myworkheading {
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 367px;
+    color: white;
+    letter-spacing: 4px;
+}
+
+#myworkheading:hover {
+    color: red;
+}
+
+#myimage1 {
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    margin-top: 180px;
+    margin-left: 450px;
+    transform: perspective(500px) rotateX(61deg) rotateY(2deg) rotateZ(25deg);
+    transition-duration: 1s;
+    background-image: linear-gradient(to bottom, rgba(255, 204, 51, 0.9), rgba(255, 204, 51, 0)), url("IMAGES/JOB1.png");
+    filter: opacity(60%);
+    box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.5);
+}
+
+#myimage1:hover {
+    transform: perspective(-500px) rotateX(-30deg);
+    transform: scaleX(2.2) scaleY(2.1);
+    filter: opacity(100%);
+    margin-top: 280px;
+    z-index: 10;
+}
+
+#myimage2 {
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    margin-top: 232px;
+    margin-left: 700px;
+    transform: perspective(450px) rotateX(60deg) rotateY(-3deg) rotateZ(25deg) skewX(20deg);
+    transition-duration: 1s;
+    background-image: linear-gradient(to bottom, rgba(255, 204, 51, 0.9), rgba(255, 204, 51, 0)), url("IMAGES/JOB2.png");
+    filter: opacity(60%);
+    box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.5);
+}
+
+#myimage2:hover {
+    transform: perspective(-500px) rotateX(-30deg);
+    transform: scaleX(2.2) scaleY(1.8);
+    filter: opacity(100%);
+    margin-top: 320px;
+    margin-left: 530px;
+    z-index: 10;
+}
+
+#myimage3 {
+    position: absolute;
+    height: 300px;
+    width: 150px;
+    margin-top: 110px;
+    margin-left: 205px;
+    transform: perspective(500px) rotateX(62deg) rotateY(2deg) rotateZ(25deg) skewX(-20deg);
+    transition-duration: 1s;
+    background-image: linear-gradient(to bottom, rgba(255, 204, 51, 0.9), rgba(255, 204, 51, 0)), url("IMAGES/JOB3.png");
+    filter: opacity(60%);
+    box-shadow: 10px 15px 4px rgba(0, 0, 0, 0.5);
+}
+
+#myimage3:hover {
+    transform: perspective(-500px) rotateX(-30deg);
+    transform: scaleX(1.8) scaleY(3);
+    filter: opacity(100%);
+    margin-top: 150px;
+    margin-left: 180px;
+    z-index: 10;
+}
+
+#opacitydiv {
+    position: absolute;
+    height: 46.6%;
+    width: 90%;
+    margin-top: 645px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+    filter: blur(1px);
+    -webkit-clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 40%);
+    clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 40%);
+}
+
+/* ------------------------------  -------------------------------- */
+
+#closerdiv {
+    position: absolute;
+    height: 1661px;
+    width: 100%;
+    margin-top: 1660px;
+    background: rgb(255, 204, 51);
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    z-index: 1;
+}
+
+#closerimage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin-top: -1600px;
+}
+
+#closercontactdiv {
+    position: absolute;
+    height: 360px;
+    width: 100%;
+    margin-top: 1300px;
+    background: rgba(0, 0, 0, 0.4);
+    -webkit-clip-path: polygon(0 0, 100% 28.4%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 28.4%, 100% 100%, 0% 100%);
+    overflow: hidden;
+    z-index: 1;
+}
+
+#contactmeheading {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px;
+    color: white;
+}
+
+#contactmeheading:hover {
+    color: red;
+}
+
+#contactform {
+    position: absolute;
+    height: 220px;
+    width: 800px;
+    margin-top: 100px;
+    margin-left: 370px;
+    border: 3px double white;
+    border-left: transparent;
+    border-right: transparent;
+    -webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 20% 100%);
+    clip-path: polygon(0 0, 80% 0%, 100% 100%, 20% 100%);
+}
+
+.form-control {
+    color: white;
+    background: transparent;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+
+.form-control:hover {
+    border-bottom: 1px solid red;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+#nameinput {
+    position: absolute;
+    height: 20px;
+    width: 230px;
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+#emailinput {
+    position: absolute;
+    height: 20px;
+    width: 230px;
+    margin-top: 30px;
+    margin-left: 400px;
+}
+
+#messageinput {
+    position: absolute;
+    height: 100px;
+    width: 400px;
+    margin-top: 70px;
+    margin-left: 200px;
+    max-height: 100px;
+    background: rgba(0, 0, 0, 0.3)
+}
+
+#sendbutton {
+    position: absolute;
+    height: 30px;
+    width: 200px;
+    margin-top: 183px;
+    margin-left: 540px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+#sendbutton:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+.sendbuttonhovereffect:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3));
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+}
+
+.sendbuttonhovereffect:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+#facebookicon {
+    position: absolute;
+    height: 50px;
+    margin-top: 270px;
+    margin-left: 1250px;
+}
+
+#instagramicon {
+    position: absolute;
+    height: 53px;
+    margin-top: 269px;
+    margin-left: 1340px;
+    z-index: 1;
+}
+
+#linkedinicon {
+    position: absolute;
+    height: 120px;
+    margin-top: 234px;
+    margin-left: 1395px;
+}
+
+#backtothetopbutton {
+    position: absolute;
+    height: 40px;
+    width: 60px;
+    margin-top: 300px;
+    margin-left: 92%;
+    padding-top: 3px;
+    font-size: 10px;
+    border-radius: 7px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* ------------------------------  -------------------------------- */
+
+@media screen and (max-width: 750px) {
+  #bodycontainer {
+    width: 1660px; 
+  }
+  
+  #headerdiv {
+    width: 1660px;
+    height: 1661px;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+    clip-path: polygon(0 0, 0% 100%, 100% 0);
+    overflow: hidden;
+  }
+  
+  #backgroundimage {
+    width: 1660px; 
+  }
+  
+  #transitionaldiv {
+    width: 1660px;
+    height: 3320px;
+    -webkit-clip-path: polygon(20% 50%, 100% 10%, 100% 30%, 60% 50%, 100% 70%, 100% 90%);
+    clip-path: polygon(20% 50%, 100% 10%, 100% 30%, 60% 50%, 100% 70%, 100% 90%);
+  }
+  
+  #blurdiv {
+    height: 1660px;
+    width: 1320px;
+    margin-top: -1130px;
+    margin-left: 340px;
+  }
+  
+  #opacitydiv {
+    -webkit-clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 40%);
+    clip-path: polygon(0 0, 100% 60%, 100% 100%, 0 40%); 
+  }
+    
+  #closerdiv {
+    width: 1660px;
+    height: 1661px;
+    -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+}
